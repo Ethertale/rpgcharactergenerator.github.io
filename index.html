@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>RPG Character Generator</title>
 </head>
@@ -18,33 +19,33 @@
         <h1 class="text-center">Role</h1>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example" id="race">
+        <select class="form-select bg-info" aria-label="Default select example" id="race">
             <option hidden>Race</option>
-            <option value="1">Animal</option>
-            <option value="2">Bird</option>
-            <option value="3">Construct</option>
-            <option value="4">Dark Elf</option>
-            <option value="5">Dwarf</option>
-            <option value="6">Elemental</option>
-            <option value="7">Elf</option>
-            <option value="8">Fey</option>
-            <option value="9">Genie</option>
-            <option value="10">Gnome</option>
-            <option value="11">Half-Elf</option>
-            <option value="12">Half-Orc</option>
-            <option value="13">Halfling</option>
-            <option value="14">Human</option>
-            <option value="15">Insectoid</option>
-            <option value="16">Orc</option>
-            <option value="17">Plane Touched</option>
-            <option value="18">Refined</option>
-            <option value="19">Reptilian</option>
-            <option value="20">Small Humanoid</option>
-            <option value="21">Tribal</option>
+            <option value="1">Animal - (Ex: Werewolf, Minotaur, Centaur, Guardinal, Slaad, Rakshasa)</option>
+            <option value="2">Bird - (Humanoids with bird features. Ex: Avian, Kenku, Aarakocra, Arakkoa)</option>
+            <option value="3">Construct - (Created through mechanical or magical means. Ex: Warforged, Shardmind)</option>
+            <option value="4">Dark Elf - (These creatures grew strong in the arcane arts over the centuries and are extremely intelligent.)</option>
+            <option value="5">Dwarf - (Average four feet in height with burly bodies. Male dwarves grow thick facial hair.)</option>
+            <option value="6">Elemental - (They have natural elemental powers. Ex: Azers, Archons, Genasi)</option>
+            <option value="7">Elf - (Renowned for their grace and mastery of magic and weapons.)</option>
+            <option value="8">Fey - (Ex: Dryads, Fairies, Nymphs, Pixies, Satyrs, Grigs, Nixies)</option>
+            <option value="9">Genie - (Ex: Dao, Djinni, Efreeti, Janni, Marids)</option>
+            <option value="10">Gnome - (Average three feet in height, they are very experienced in magic and engineering.)</option>
+            <option value="11">Half-Elf - (Curious and ambitious as humans and sense for magic like elves.)</option>
+            <option value="12">Half-Orc - (Short tempered, prone to action than thought. They prefer feasting, singing and wrestling.)</option>
+            <option value="13">Halfling - (Cousins of the gnomes, they are proficient thieves and masters of illusion.)</option>
+            <option value="14">Human - (The shortest lived and most adaptable of all races.)</option>
+            <option value="15">Insectoid - (Ex: Zerg, Xenomorph, Qiraji)</option>
+            <option value="16">Orc - (Bestial and savage, they band as tribes, living on hunting and raiding.)</option>
+            <option value="17">Plane Touched - (They have some level of Angelic or Demonic ancestry. Ex: Aasimar, Tiefling)</option>
+            <option value="18">Refined - (Ex: Eladrin, Half-Celestial, Half-Dragon, Kalashtar)</option>
+            <option value="19">Reptilian - (Lizardlike humanoids, famous for their slippery nature and archery.)</option>
+            <option value="20">Small Humanoid - (Ex: Goblin, Kobold, Dromite)</option>
+            <option value="21">Tribal - (Ex: Half-Giant, Goliath, Wood Elf)</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example" id="archetype">
+        <select class="form-select bg-info" aria-label="Default select example" id="archetype">
             <option hidden>Archetype</option>
             <option value="1">Alchemist</option>
             <option value="2">Assassin</option>
@@ -59,19 +60,23 @@
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example" id="preferredWeapon">
+        <select class="form-select bg-warning" aria-label="Default select example" id="preferredWeapon">
             <option hidden>Preferred Weapon</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">TODO</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
         <select class="form-select" aria-label="Default select example" id="alignment">
             <option hidden>Alignment</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Lawful Good</option>
+            <option value="2">Neutral Good</option>
+            <option value="3">Chaotic Good</option>
+            <option value="4">Neutral Good</option>
+            <option value="5">True Neutral</option>
+            <option value="6">Neutral Evil</option>
+            <option value="7">Chaotic Good</option>
+            <option value="8">Chaotic Neutral</option>
+            <option value="9">Chaotic Evil</option>
         </select>
     </div>
 
@@ -84,61 +89,91 @@
     <div class="container col-xl-5 p-2">
         <select class="form-select" aria-label="Default select example" id="age">
             <option hidden>Age</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Child</option>
+            <option value="2">Youth</option>
+            <option value="3">Young Adult</option>
+            <option value="4">Adult</option>
+            <option value="5">Middle Aged</option>
+            <option value="6">Elder</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
         <select class="form-select" aria-label="Default select example" id="gender">
             <option hidden>Gender</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Male To Female Trans</option>
+            <option value="4">Female To Male Trans</option>
+            <option value="5">Hermaphrodite</option>
+            <option value="6">Android/Robot</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
         <select class="form-select" aria-label="Default select example" id="height">
             <option hidden>Height</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Tiny</option>
+            <option value="2">Very Short</option>
+            <option value="3">Short</option>
+            <option value="4">Average Height</option>
+            <option value="5">Tall</option>
+            <option value="6">Very Tall</option>
+            <option value="7">Giant</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
         <select class="form-select" aria-label="Default select example" id="weight">
             <option hidden>Weight</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Emaciated</option>
+            <option value="2">Runty</option>
+            <option value="3">Thin</option>
+            <option value="4">Average Build</option>
+            <option value="5">Athletic</option>
+            <option value="6">Muscular</option>
+            <option value="7">Shredded</option>
+            <option value="8">Chubby</option>
+            <option value="9">Fat</option>
+            <option value="10">Overweight</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
         <select class="form-select" aria-label="Default select example" id="skin">
             <option hidden>Skin</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Pale Skin</option>
+            <option value="2">Average Skin Tone</option>
+            <option value="3">Dark Skin</option>
+            <option value="4">Diseased Skin</option>
+            <option value="5">Heavily Scarred</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
         <select class="form-select" aria-label="Default select example" id="eyeColor">
             <option hidden>Eye Color</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Black Eyes</option>
+            <option value="2">Blue Eyes</option>
+            <option value="3">Brown Eyes</option>
+            <option value="4">Gold Eyes</option>
+            <option value="5">Green Eyes</option>
+            <option value="6">Hazel Eyes</option>
+            <option value="7">Magenta Eyes</option>
+            <option value="8">Red Eyes</option>
+            <option value="9">White Eyes</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
         <select class="form-select" aria-label="Default select example" id="hairColor">
             <option hidden>Hair Color</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Black Hair</option>
+            <option value="2">Blonde Hair</option>
+            <option value="3">Brown Hair</option>
+            <option value="4">Dirty Blonde Hair</option>
+            <option value="5">Grey Hair</option>
+            <option value="6">Purple Hair</option>
+            <option value="7">Red Hair</option>
+            <option value="8">White Hair</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example" id="hairStyle">
+        <select class="form-select bg-info" aria-label="Default select example" id="hairStyle">
             <option hidden>Hair Style</option>
             <option value="1">One</option>
             <option value="2">Two</option>
@@ -148,17 +183,44 @@
     <div class="container col-xl-5 p-2">
         <select class="form-select" aria-label="Default select example" id="beard">
             <option hidden>Beard</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">None/Clean Shaven</option>
+            <option value="2">Braided Beard</option>
+            <option value="3">Chin Curtain</option>
+            <option value="4">Chin Strap</option>
+            <option value="5">Dirt Stache</option>
+            <option value="6">Goatee</option>
+            <option value="7">Handle Bar Moustache</option>
+            <option value="8">Long Beard</option>
+            <option value="9">Medium Beard</option>
+            <option value="10">Moustache</option>
+            <option value="11">Mutton Chops</option>
+            <option value="12">Short Beard</option>
+            <option value="13">Sideburns</option>
+            <option value="14">Soul Patch</option>
+            <option value="15">Stubble</option>
+            <option value="16">Toothbrush Moustache</option>
+            <option value="17">Van Dyke</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example" id="style">
+        <select class="form-select bg-info" aria-label="Default select example" id="style">
             <option hidden>Style</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Apathetic</option>
+            <option value="2">Average</option>
+            <option value="3">Bling</option>
+            <option value="4">Cheery</option>
+            <option value="5">Comfy</option>
+            <option value="6">Crude</option>
+            <option value="7">Dark</option>
+            <option value="8">Elegant</option>
+            <option value="9">Formal</option>
+            <option value="10">Gothic</option>
+            <option value="11">High Fashion</option>
+            <option value="12">Nudist</option>
+            <option value="13">Punk</option>
+            <option value="14">Refined</option>
+            <option value="15">Regal</option>
+            <option value="16">Tasteful</option>
         </select>
     </div>
 
@@ -168,43 +230,84 @@
         <h1 class="text-center">Personality</h1>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="goal">
             <option hidden>Goal</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Adventure - (You want to explore, see the world, get in trouble, and make a difference.)</option>
+            <option value="2">Creation - (You want to create a town, order, society, cult, race, magical item, or life itself.)</option>
+            <option value="3">Destruction - (You want to destroy a town, order, society, cult, race, magical item, or life itself.)</option>
+            <option value="4">Education - (You want to spread knowledge of a science, a religion, or a philosophy.)</option>
+            <option value="5">Hunter - (You despise a certain form of life so much you seek to hunt that creature to extinction.)</option>
+            <option value="6">Indulgence - (You want to experience the world and please your senses.)</option>
+            <option value="7">Knowledge - (You seek to know all the secrets of the universe.)</option>
+            <option value="8">Nobility - (You want to become an important person in political matters.)</option>
+            <option value="9">Order/Chaos - (You want to spread Order throughout the world, or plunge it into Chaos.)</option>
+            <option value="10">Peace/War - (You want to spread Peace or War throughout the world.)</option>
+            <option value="11">Power - (You want to become the most powerful being in the world.)</option>
+            <option value="12">Protector - (You want to protect the innocent from corruption (or the corrupted from innoncence).)</option>
+            <option value="13">Rebellion - (You want to unite those against an order, sect, society, religion or empire.)</option>
+            <option value="14">Renown - (You want to be known throughout the world.)</option>
+            <option value="15">Service - (You are called to duty for a lord or religious figure.)</option>
+            <option value="16">Wealth - (You want to acquire riches untold.)</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-info" aria-label="Default select example" id="outlook">
             <option hidden>Outlook</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Brooding</option>
+            <option value="2">Candid</option>
+            <option value="3">Cautious</option>
+            <option value="4">Cold</option>
+            <option value="5">Daring</option>
+            <option value="6">Dark</option>
+            <option value="7">Dutiful</option>
+            <option value="8">Extraverted</option>
+            <option value="9">Friendly</option>
+            <option value="10">Introverted</option>
+            <option value="11">Liberal</option>
+            <option value="12">Narcissist</option>
+            <option value="13">Optimist</option>
+            <option value="14">Pessimist</option>
+            <option value="15">Shy</option>
+            <option value="16">Spontaneous</option>
+            <option value="17">Stubborn</option>
+            <option value="18">Traditional</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-info" aria-label="Default select example" id="humor">
             <option hidden>Humor</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Cynical</option>
+            <option value="2">Dark</option>
+            <option value="3">Dry Humor</option>
+            <option value="4">Joker</option>
+            <option value="5">Mean</option>
+            <option value="6">Non-sense</option>
+            <option value="7">None</option>
+            <option value="8">Prankster</option>
+            <option value="9">Rude</option>
+            <option value="10">Toilette</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-info" aria-label="Default select example" id="emotions">
             <option hidden>Emotions</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Angry</option>
+            <option value="2">Anxious</option>
+            <option value="3">Apathetic</option>
+            <option value="4">Ashamed</option>
+            <option value="5">Calm</option>
+            <option value="6">Curious</option>
+            <option value="7">Excited</option>
+            <option value="8">Gloomy</option>
+            <option value="9">Happy</option>
+            <option value="10">Melancholy</option>
+            <option value="11">Violent</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-warning" aria-label="Default select example" id="quirks">
             <option hidden>Quirks</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">TODO</option>
         </select>
     </div>
 
@@ -213,35 +316,59 @@
         <h1 class="text-center">Birthplace or Home</h1>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="homeSize">
             <option hidden>Home Size</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Camp</option>
+            <option value="2">Small Settlement</option>
+            <option value="3">Village</option>
+            <option value="4">Town</option>
+            <option value="5">City</option>
+            <option value="6">Metropolis</option>
+            <option value="7">Forest</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="homeEnvironment">
             <option hidden>Home Environment</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Desert</option>
+            <option value="2">Forest</option>
+            <option value="3">Island</option>
+            <option value="4">Mountains</option>
+            <option value="5">Plains</option>
+            <option value="6">Swamp</option>
+            <option value="7">Tundra</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-info" aria-label="Default select example" id="homeIndustry">
             <option hidden>Home Industry</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Agricultural</option>
+            <option value="2">Commercial</option>
+            <option value="3">Gold Rush/Mine</option>
+            <option value="4">Industrial</option>
+            <option value="5">Military/Tactically Important</option>
+            <option value="6">None</option>
+            <option value="7">Politically Important</option>
+            <option value="8">Religiously Important</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-info" aria-label="Default select example" id="homeCommunity">
             <option hidden>Home Community</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Anti-Magic</option>
+            <option value="2">Anti-Technology</option>
+            <option value="3">Average Society</option>
+            <option value="4">Dangerous</option>
+            <option value="5">Equality Centric</option>
+            <option value="6">Giving</option>
+            <option value="7">Hospitable</option>
+            <option value="8">Magic Centric</option>
+            <option value="9">None</option>
+            <option value="10">Pious/Devoted</option>
+            <option value="11">Racist</option>
+            <option value="12">Suspicious</option>
+            <option value="13">Technology Centric</option>
+            <option value="14">Tight Knit</option>
         </select>
     </div>
 
@@ -250,19 +377,21 @@
         <h1 class="text-center">Past</h1>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-warning" aria-label="Default select example" id="pastEvent">
             <option hidden>Past Event</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">TODO</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-info" aria-label="Default select example" id="education">
             <option hidden>Education</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Average</option>
+            <option value="2">Dedicated Life to Learning</option>
+            <option value="3">Home Schooled</option>
+            <option value="4">Poor</option>
+            <option value="5">Private School</option>
+            <option value="6">Self Taught</option>
+            <option value="7">Well Educated</option>
         </select>
     </div>
 
@@ -271,27 +400,37 @@
         <h1 class="text-center">Religion</h1>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-info" aria-label="Default select example" id="faith">
             <option hidden>Faith</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Atheist</option>
+            <option value="2">Agnostic</option>
+            <option value="3">Casual</option>
+            <option value="4">Devoted</option>
+            <option value="5">Leader</option>
+            <option value="6">Orthodox</option>
+            <option value="7">Priest</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-info" aria-label="Default select example" id="denomination">
             <option hidden>Denomination</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">No Religion</option>
+            <option value="2">Harmonistic</option>
+            <option value="3">Monotheistic</option>
+            <option value="4">Naturalistic</option>
+            <option value="5">Polytheistic</option>
+            <option value="6">Spiritual</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-info" aria-label="Default select example" id="religionPopularity">
             <option hidden>Popularity</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">No Religion</option>
+            <option value="2">Church</option>
+            <option value="3">Cult</option>
+            <option value="4">Family Tradition</option>
+            <option value="5">Local</option>
+            <option value="6">Wide Spread</option>
         </select>
     </div>
 
@@ -300,43 +439,51 @@
         <h1 class="text-center">Family</h1>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="siblings">
             <option hidden>Siblings</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">No Siblings</option>
+            <option value="2">1-2 Siblings</option>
+            <option value="3">3-5 Siblings</option>
+            <option value="4">5+ Siblings</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="familySize">
             <option hidden>Size</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Overall Small</option>
+            <option value="2">Overall Average</option>
+            <option value="3">Overall Large</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select bg-info" aria-label="Default select example" id="familyOutlook">
             <option hidden>Family Outlook</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Addicted (Drugs/Alcohol)</option>
+            <option value="2">Conservative</option>
+            <option value="3">Extremely Close</option>
+            <option value="4">Greedy</option>
+            <option value="5">Green</option>
+            <option value="6">Liberal</option>
+            <option value="7">Traditional</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="familyReputation">
             <option hidden>Reputation</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">No Reputation</option>
+            <option value="2">Average Reputation</option>
+            <option value="3">Well-Known</option>
+            <option value="4">Renowned</option>
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="familyWealth">
             <option hidden>Wealth</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Impoverished</option>
+            <option value="2">Lower Class</option>
+            <option value="3">Middle Class</option>
+            <option value="3">Upper Class</option>
+            <option value="3">Extremely Wealthy</option>
         </select>
     </div>
 
@@ -345,7 +492,7 @@
         <h1 class="text-center">Sexuality</h1>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="sexualOrientation">
             <option hidden>Sexual Orientation</option>
             <option value="1">Heterosexual</option>
             <option value="2">Bisexual</option>
@@ -355,7 +502,7 @@
         </select>
     </div>
     <div class="container col-xl-5 p-2">
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="sexDrive">
             <option hidden>Sex Drive</option>
             <option value="1">Apathetic</option>
             <option value="2">Low Sex Drive</option>
@@ -373,13 +520,15 @@
 
     </div>
 
-    <div class="container mt-3 border">
+    <div class="container mt-3 border bg-light">
         <h4 class="text-center">Changelog</h4>
         <div class="row justify-content-center">
-            <div class="col-4">
-
+            <div class="col-6">
+                <p class="text-center m-0"><span class="text-secondary">(07.11.24) </span>v0.35 - SAVE button works properly and more text was added</p>
+                <hr>
                 <p class="text-center m-0"><span class="text-secondary">(02.11.24) </span>v0.2 - Options created</p>
-                <p class="text-center m-0"><span class="text-secondary">(29.10.24) </span>v0.1 - Site created</p>
+                <hr>
+                <p class="text-center m-0 mb-3"><span class="text-secondary">(29.10.24) </span>v0.1 - Site created</p>
             </div>
         </div>
 
@@ -388,6 +537,9 @@
 </main>
 
 <footer>
+    <div class="container pt-3">
+        <p class="text-center">&copy; Ethertale 2024</p>
+    </div>
 
 </footer>
 
